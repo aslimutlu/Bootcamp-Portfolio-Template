@@ -117,6 +117,23 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.body-wrapper .content section#home .skills-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.body-wrapper .content section#home .skills-icons .icon {
+  font-size: 1.2rem;
+  background-color: #343a40;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .body-wrapper .content section#experience .experience-item {
   margin: 5rem 0;
 }
@@ -147,4 +164,62 @@ h2 {
 }
 .body-wrapper .content section#experience .experience-header-date {
   color: #bd5d38;
+}
+.body-wrapper .content section#education .education-item {
+  margin: 5rem 0;
+}
+.body-wrapper .content section#education .education-item:first-child {
+  margin-top: 0;
+}
+.body-wrapper .content section#education .education-item:last-child {
+  margin-bottom: 0;
+}
+.body-wrapper .content section#education .education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.body-wrapper .content section#education .education-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.body-wrapper .content section#education .education-header-title .header-job {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+}
+.body-wrapper .content section#education .education-header-title .header-organization {
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+}
+.body-wrapper .content section#education .education-header-date {
+  color: #bd5d38;
+}
+.body-wrapper .content section#education .education-experience-detail-end {
+  padding-bottom: 20px;
+}
+.body-wrapper .content section#skills-item {
+  margin: 5rem 0;
+}
+.body-wrapper .content section#skills-item:first-child {
+  margin-top: 0;
+}
+.body-wrapper .content section#skills-item:last-child {
+  margin-bottom: 0;
+}
+.body-wrapper .content section#skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.body-wrapper .content section#skills-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.body-wrapper .content section#skills-header-skills-title-name {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
 }/*# sourceMappingURL=style.css.map */

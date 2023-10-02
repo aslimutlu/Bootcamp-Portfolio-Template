@@ -139,6 +139,26 @@ h2 {
                         align-items: center;
                     }
                 }
+
+                .skills-icons {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 1rem;
+
+                    .icon {
+                        font-size: 1.2rem;
+                        background-color: $secondary-color;
+                        color: #fff;
+                        padding: 0.5rem;
+                        border-radius: 50px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
             }
 
             &#experience {
@@ -183,7 +203,94 @@ h2 {
                     }
                 }
             }
-        }
 
+            &#education {
+                .education {
+                    &-item {
+                        margin: 5rem 0;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+
+                        &-title {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.2rem;
+
+                            .header-job {
+                                font-weight: 800;
+                                font-size: 1.4rem;
+                                letter-spacing: -1px;
+                            }
+
+                            .header-organization {
+                                font-size: 1.2rem;
+                                letter-spacing: -1px;
+                            }
+                        }
+
+                        &-date {
+                            color: $primary-color;
+                        }
+                    }
+
+                    &-experience-detail-end {
+                        padding-bottom: 20px;
+                    }
+
+
+                }
+
+            }
+
+            &#skills {
+                &-item {
+                    margin: 5rem 0;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    
+                }
+
+                &-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+
+                    &-title {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.2rem;
+                    }
+
+                    &-skills-title-name {
+                        font-weight: 800;
+                        font-size: 1.4rem;
+                        letter-spacing: -1px;
+                    }
+
+                }
+
+
+            }
+        }
     }
+
 }
