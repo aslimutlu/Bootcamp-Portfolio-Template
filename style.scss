@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+$primary-color: #bd5d38;
+$secondary-color: #343a40;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Mulish;
+    color: #6c757d;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+
+.body-wrapper {
+    display: grid;
+    grid-template-areas: "left-menu content content";
+    grid-template-columns: 25% repeat(2, 1fr);
+    height: 100vh;
+
+    .left-menu {
+        grid-area: left-menu;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+
+
+        .avatar {
+            display: flex;
+            width: 10rem;
+            height: 10rem;
+            border: 10px solid #ca7d60;
+            border-radius: 500px;
+            overflow: hidden;
+
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .menu {
+            font-size: 16px;
+            list-style: none;
+            letter-spacing: 0.1rem;
+            font-weight: 800;
+            padding-inline-start: 0;
+
+            li {
+                text-align: center;
+                margin: 1.2rem 0;
+
+                &>a {
+                    text-transform: uppercase;
+                    color: #d8b0a5;
+                    transition-duration: 0.3s;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        transition-duration: 0.3s;
+                        color: #eed6cd
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .content {
+        grid-area: content;
+        overflow: auto;
+        padding: 0;
+
+        section {
+            border-top: 1px solid grey;
+            padding: 3rem 5rem;
+            height: 100vh;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &#home {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 6rem;
+                    line-height: 1;
+                    letter-spacing: -5px;
+                    margin-bottom: 1rem;
+                    font-weight: 800;
+                    color: $secondary-color;
+
+                    .surname {
+                        color: $primary-color;
+                    }
+                }
+
+                .information-area {
+                    margin-bottom: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: -1px;
+                }
+
+                .social-media-links {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: 1rem;
+
+                    .icon {
+                        font-size: 1.2rem;
+                        background-color: $secondary-color;
+                        color: #fff;
+                        padding: 0.5rem;
+                        border-radius: 50px;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            &#experience {
+                .experience {
+                    &-item {
+                        margin: 5rem 0;
+
+                        &:first-child {
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+
+                        &-title {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.2rem;
+
+                            .header-job {
+                                font-weight: 800;
+                                font-size: 1.4rem;
+                                letter-spacing: -1px;
+                            }
+
+                            .header-organization {
+                                font-size: 1.2rem;
+                                letter-spacing: -1px;
+                            }
+                        }
+
+                        &-date {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
